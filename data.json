@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Geo",
+        "age": "39",
+        "height": 182,
+        "gender": "male"
+    },
+    {
+        "name": "Mia",
+        "age": "34",
+        "height": 164,
+        "gender": "female"
+    },
+    {
+        "name": "Chin",
+        "age": "27",
+        "height": 161,
+        "gender": "female"
+    },
+    {
+        "name": "Any",
+        "age": "30",
+        "height": 159,
+        "gender": "female"
+    },
+    {
+        "name": "Any",
+        "age": "30",
+        "height": 159,
+        "gender": "female"
+    }
+]
