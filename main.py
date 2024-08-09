@@ -1,18 +1,51 @@
 print("God_Bless")
 
-import json
+import random
 
-with open("data.json") as file:
-    data = json.load(file)
-    data.append(
-        {
-            "name": "Any",
-            "age": "30",
-            "height": 159,
-            "gender": "female"
-        }
-    )
-print(data)
+while True:
+    choices = ["rock", "paper", "scissors"]
 
-with open("data.json", "w") as file:
-    json.dump(data, file, indent=4)
+    player = None
+    computer = random.choice(choices)
+
+    while player not in choices:
+        player = input("rock, paper, or scissors?: ").lower()
+
+    if player == computer:
+        print("computer: ", computer)
+        print("player: ", player)
+        print("Tie!")
+    elif player == "rock":
+        if computer == "paper":
+            print("computer: ", computer)
+            print("player: ", player)
+            print("You lose!")
+        if computer == "scissors":
+            print("computer: ", computer)
+            print("player: ", player)
+            print("You win!")
+    elif player == "scissors":
+        if computer == "rock":
+            print("computer: ", computer)
+            print("player: ", player)
+            print("You lose!")
+        if computer == "paper":
+            print("computer: ", computer)
+            print("player: ", player)
+            print("You win!")
+    elif player == "paper":
+        if computer == "scissors":
+            print("computer: ", computer)
+            print("player: ", player)
+            print("You lose!")
+        if computer == "rock":
+            print("computer: ", computer)
+            print("player: ", player)
+            print("You win!")
+
+    play_again = input("Play again? (yes/no): ").lower()
+
+    if play_again != "yes":
+        break
+
+print("Bye!")
